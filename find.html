@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Dealer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: white;
+        }
+        p {
+            font-size: 18px;
+            color:white;
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Find a Dealer Near You</h1>
+        <p>
+            Discover authorized dealers near your location. Enter your city and country below to get started. 
+            Whether you're looking for assistance or purchasing a vehicle, our trusted network of dealers is here to help.
+        </p>
+        <form action="#" method="post">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Enter your city" required>
+            
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" placeholder="Enter your country" required>
+            
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>

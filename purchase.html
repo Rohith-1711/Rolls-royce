@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Purchase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            width: 50%;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Make it yours</h1>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            
+            <label for="carModel">Model:</label>
+            <select id="carModel" name="carModel" required>
+                <option value="">Select a model</option>
+                <option value="Ghost">Rolls-Royce Ghost</option>
+                <option value="Cullinan">Rolls-Royce Cullinan</option>
+                <option value="Wraith">Rolls-Royce Wraith</option>
+                <option value="Spectre">Rolls-Royce Spectre</option>
+            </select>
+            
+            <label for="color">Preferred Color:</label>
+            <input type="text" id="color" name="color" placeholder="Enter preferred color">
+
+            
+            <label for="message">Additional Comments:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter any additional comments"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
